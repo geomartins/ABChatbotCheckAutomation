@@ -1,0 +1,199 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="OpenBrowerAndDoBotCheckWithScreenRecordeWidger" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_SiteUrl" Type="InArgument(x:String)" />
+  </x:Members>
+  <this:OpenBrowerAndDoBotCheckWithScreenRecordeWidger.in_SiteUrl>
+    <InArgument x:TypeArguments="x:String" />
+  </this:OpenBrowerAndDoBotCheckWithScreenRecordeWidger.in_SiteUrl>
+  <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
+  <sap:VirtualizedContainerService.HintSize>628,515</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="54">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="64">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Firefox: AB Microfinance Bank" sap:VirtualizedContainerService.HintSize="476,1746" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" ScopeGuid="0c29ea8a-10f9-47ad-b247-a43b2ba386f7" Version="V2">
+    <uix:NApplicationCard.Body>
+      <ActivityAction x:TypeArguments="x:Object">
+        <ActivityAction.Argument>
+          <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+        </ActivityAction.Argument>
+        <Sequence sap:VirtualizedContainerService.HintSize="442,1529" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,1437" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Delay DisplayName="Delay for 30 Seconds" Duration="00:00:30" sap:VirtualizedContainerService.HintSize="338,90" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            <uix:NClick ClickType="Single" DisplayName="Click Bot Icon" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0c29ea8a-10f9-47ad-b247-a43b2ba386f7" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://ab-mfbnigeria.com/" DesignTimeRectangle="1273, 535, 45, 45" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl parentid='startConversation' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='startConversation' tag='IMG' type='' class='conversation' aaname='                                               ' /&gt;" Guid="df5ce99d-4740-4ac7-8c52-700c2ab8b79b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADEAAAAxCAYAAABznEEcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAO/SURBVGhD7ZmNceIwEIXpIOkgdBA6IB1AB9ABdAAdJB2EDpIOkg4ogRIowTefJ+t5VlaybBnnLnNvZoc/W9q3erta4Vn1C/CfRBc+Pz+rl5eX6ng81rZer+tXvuO3y+XydWUZRiVxvV6r0+lUOzubzbJssVjUpEoIjUIC54nw/f2962iubbfbQWSKSby9vbnOPz4+Vs/Pz9XHx0dtEAXn87n+zG+r1erbfRgB6YMiEvv9vjX53d1ddTgcGodzwLWvr6/Vw8NDayxkljvOIBIM/vT01Jq0r/MeWB0CYWPO5/N65bowiARRsomYFHmMBQKBFG18pNqVJ71JkHw2AZPlRKovIKL50iWtXiTQrg3MCoxV52NYLpfNfAQvhmwSREKr0C1WIARzasITRA/ZJDabTTMYCTgVCJbNS6J7yCKBbGwgIjM1NIDeamSR2O12yUEAJZayW2K0K14CaxC91cgiwY0MQDJ70ElKLSZVXY2woHSSUE0yUAxaSYYaUo1VPK2MIdFOEtxgN9Mn/RSQmflBwBSdJNC63ZzacKaArXaYF50kVCYpQJCDTol17T0xX7JJxJIaQKD0LGGW6sO0SiqSJEgmcy7UoUL1WmqxEg5U2ko2SkKrgVkKDMokJZYiALjG88X1jCqkzns3/gSycyLUt/b2UzR9KdimG7Y+30ho8vBeZdWlV6+V8IxjbV9o3nHWULRIeI2efhfebBiS2H1PgxrM5I6tiaNR154ehz2oXruMa2PjxMAK2v3J3inW6GkUIDo1tH/zSn1DQiURNnr8BjH7Pdak3QqqEK9/a0igUbvQi7YORN8/JVL5AFwSsW5Vy22s778FVAnJQ5GyjVUOJYpN2ZrroSjcr7LlZFCymFaxW0K7CPYvRUNCK0BXBdINERuyeQ1BTFINCZDSXQg98dk9JfKi4nGmSO0fMUm1SKR05wEpaenF2JR40JK7mTGP/jWKUf28MWKSapHQi1J/CiiIYOw5A/+h2qMunCLS9vgLR3MOUlz3/v7+NZuvlhYJzYtcEgYKQ4xMjtHakItaxtUgzIrhvH1naJHQhB2qb1aGfMnppXCYOcOSbmPECGEa5BYJY8mSjQFWViXDxDgcOp0ChFghbULDBrIhUSIlD2jfxhtrTAhhIRoSnpS4AWfsyRCvfI5VHq4ngVW32BgEUmhI6MQ5z6K5Xk9r+gjMDFmW7B25aEiE9T60PocexiL6uXtFKVw5meE4G5o5wyufKaUhKT7zvV4/FRoSAAeIIOXNS6C/FS0S/yp+AYmq+gN9P484ZLjIFwAAAABJRU5ErkJggg==" InformativeScreenshot="f8c13bb6682b0946645d9518b0da88cd.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='AB Microfinance Bank' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="1270, 463, 50, 50" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl parentid='fb-root' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='fb-root' tag='IMG' type='' class='' aaname='                                               ' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type &quot;Hi&quot; into Bot" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="338,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="0c29ea8a-10f9-47ad-b247-a43b2ba386f7" Text="Hi" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://ab-mfbnigeria.com/" DesignTimeRectangle="919, 641, 336, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='webchat__send-box-text-box__input' aaname='' /&gt;" Guid="50173bc3-9ee3-44f6-81de-82edab8742d1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAVQAAAAmCAYAAACbD2PLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALkSURBVHhe7dgLagJBEIThnNpDeApP4TE8htcwVLRC0fTqLDRGyP/BEHfn1bNgsebrBgAYQaACwBACFQCGEKgAMIRABYAhBCoADCFQAWAIgQoAQwhUABhCoALAEAIVAIYQqAAwhEAFgCEEKgAMIVABYMhvoB6Px9vhcGjb9Xp9jAIAbGnfUBWil8vlcQUAWLEUqHp7PZ/Pj6s7j1E7nU4//X6j1XXStfvUOlqn9mlN7W25Rt7XG7Tu5Zu09nQdrtF11LOI7qllrZqX56rzcqxayr6tM+R6+QtBc1P2ufmsWV/eB/B+S4GqL22GQoafP2c45Pw6V2FRA8Pqvprndese6vM6K4Fa51fqq3Xruq6RQbZ1Lo3NPlN/V4Pu57lrHV5XsgbXZLUmAO+1FKg1sDIYuvBQv0NAfd1anZyX47o9MkxqfZJrdfOrGlxdnbr2WZ6dy7VlPaL1X9UhGuPnqzn+LLlv7ZNuXwDvsfw/1Pzy5pdW42pIZDhpbNc6GUq5hj7XPXKsP2eQaK7ndzVWuZ/k+qZrPxd97pppnO/ls9Qedaz4npufddZVz6kz1XnZD+C9lgPVoeS/Vq8lw8xzVuUentftoXuqU2rQSNbQza/2BurquVxnDTnt5Zr01wEqea1xmu+W49SX1wD+1nKgSveldmD4noPI8zM4Vmgd72N1TdGaGYBZg2tyv65f1aC5ud6rQF09V7eO5H65rsf7LNpD9zp+VgA+w65AVQCoL7/gDiv3ZRhY9qk9CyIHisPGfN+t9qsO92n9DCzX+EyOF++XdJ3PZetcDjo3z1F/3resXU3r+hnWc6tlDXUvNQB/ow3ULfry1mBaCau9amj8Z/VZdEEP4DPsClQFp9+cbDpQtR6Bcefw1F/j+QCfazlQuy+3TAeqfu7mT+//zgGaDcBn2vWGCgDYRqACwBACFQCGEKgAMIRABYAhBCoADCFQAWAIgQoAQwhUABhCoALAEAIVAEbcbt9oXBbj33kIXwAAAABJRU5ErkJggg==" InformativeScreenshot="e9b4f421b02f10fe29ef2a79afcaaf73.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='AB Microfinance Bank' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Submit Inputed &quot;Hi&quot;" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0c29ea8a-10f9-47ad-b247-a43b2ba386f7" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://ab-mfbnigeria.com/" DesignTimeRectangle="1271, 635, 28, 28" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'SVG'" FullSelectorArgument="&lt;webctrl parentid='webchat' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='webchat' tag='svg' type='' class='webchat__send-icon webchat--css-zgwti-varv44' aaname='' /&gt;" Guid="cc8882d9-6109-4fd7-9642-fcfb181ac55b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEqSURBVFhH7dUhC8JQEAdwwexX8GsYrSaxGIxWqzBMM2jSsOYWDIsOQTBYBEEYWF4dmMQkYplFJlhOTlSG3HObe49n2MEfTHe/7d6bOVBcGSADZID/BPi+//wlv0iAbdtgGAa4risdQwIYY6Bp2jsyMSQgCILHYBzqeR44jgO6rkvBcA/haw3hkoHhAl5r4DUXheECwmuIqjQYLgAL14BNLcuKHQSEE4WJBTBNM3aEAZSvQPkhVHoNlX+IlH+Klf8ZyRh6vl1gcWDQ8ybQ2AygtGxDcd7kH0IRtb+cYLidQXnVgfykSkYKAJ+05vbJgZ8RCsDB356WihAAvmrcKzUgKqkB490SCtM62TxOUgFabEQ2TZKfAHilKusu2TBpEgOOV/9xh6lmyVOFOxdId2s6y0xfAAAAAElFTkSuQmCC" InformativeScreenshot="84f475f215b664c7369aff2a94934a0d.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='AB Microfinance Bank' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="979, 557, 201, 26" ElementType="Text" FriendlyName="'Hi! Type'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p' isleaf='1' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' tag='P' class='' aaname='Hi! Type anything to get started!!' check:innerText='Hi! Type anything to get started!!' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAM0AAAAeCAYAAACPFproAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAP/SURBVHhe7ZU7blRBEEVnG8SkZCyBBLZA5JQFIHIyrwSJdbAAFuN80BnpSteX6p5pxo83tis48uv6V3WX53D/6+HYNM3l9NI0zSK9NE2zSC9N0yzSS9M0i/TSNM0ivTRNs0gvTdMs0kvTNIv00jTNIlcvzdcfv4+Hw+H0t9K/Jt68fXe8u/9Z6prb4/3Hzyd0/vTl++kO3aaSPVoalBi5TEuhM0k8yGxpsENX8dyXjDnkrOh3tDSa0xZLtdc86d8f3aVoFpVuhWv7/m9LU3FJ8di8pP/Cq0uzJdc+nn/lpS0Nd5cLUsmWl6Ya1CXFY+MPqsolG9CjRAaZk7N04LqEXFWcKo9qQp45VbNshfpCz7fr3J+z5kQc8D4UBzIOZD2VzUinviqqnmSv+0+5z9TlSdpkLuJgl3l8FvJTzg933x7Zgmx9ni4Hnwmx8o7Rq56ZbLel0RB0VkP+7bW4f/pm8w5yz+txMo/O9KJv+WkO6pO4Xh9Qk/tw9rrcH1/OqkXnke2oP3Bb8D4489dzOdLpnH25n2wV91xd1Ywgc4Kfc/aaTdbvtchu9i48hnK4Hpn7j2R/LQ2BKmRTDQq9F1+BjTedF+ADrgr1AaCrYuk8A99ZHq/Tv7Nvr1dkXeg9vveb8Xwe2U9Vp+NxoaoNmecTGdvrqvJ67OwhQVfVnf0lPgvOozzZN7l8/p5n1IvHrWwq2W6/NEAc5fMYVaGeF9sKt3fSTjmrPJxVp+d0OXjtIm0yPrnVo8eu9P6NXdo6bgvkzNqqfIAf/jq7L3/RJa6f1QXo5SdZ5gRmJTuhnkZ53EbnCnTE8LsAYnrcvK+R7EmW5hKI4Q8KVFAWVhXqDcrH9SOyJz9XeTy2eq8umVpyVllXxlcsvqs5Sq98jtsl8tO5qs3n51Cj5/F6q/k4VQ8jsFOsnKfO6iHPozxuAzl/p+plNJNzXL000o+KFSMb5OB5sXNZ5vALOIf7KY7iIs84OXjO+ORwq4Gnb8Ynji455+h6/FI3w3sEYiPTeXZH2GoeycwP8Mv5jfB+FVezIL7Xq/qld18na8NmVE/2opweV3l1Hsl2XxpiodOAADtqkQ6yLtfBaFgajsBPsZTH7Tl7nRpa1q6+XZe+GR9b9ZlzTP2l/YFqhEoGWb9DbLf1urxP4bEk00ydjOs69ae+vF99z2YluXwk8zjgc6NuybHLuIqn80j2aGn2gKLyQeRj2xMNutJtRTUTXbLLngLi+sMBcs+W7LWz+9JwQfkYbmlpqke1NaOHvMXSVHH5J9FLM2bXpdFPv36GxS0tzV4PiP7JLbZYGOF5oBdmzu6/NE3z3OilaZpFemmaZpFemqZZpJemaRbppWmaRXppmmaJh+Mftp9kBlMJLikAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type &quot;Martins&quot; into Bot" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="338,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="0c29ea8a-10f9-47ad-b247-a43b2ba386f7" Text="Martins" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://ab-mfbnigeria.com/" DesignTimeRectangle="919, 641, 336, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='webchat__send-box-text-box__input' aaname='' /&gt;" Guid="9f8cad93-77cb-48dd-aeab-fd4e7954d592" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAVQAAAAmCAYAAACbD2PLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALkSURBVHhe7dgLagJBEIThnNpDeApP4TE8htcwVLRC0fTqLDRGyP/BEHfn1bNgsebrBgAYQaACwBACFQCGEKgAMIRABYAhBCoADCFQAWAIgQoAQwhUABhCoALAEAIVAIYQqAAwhEAFgCEEKgAMIVABYMhvoB6Px9vhcGjb9Xp9jAIAbGnfUBWil8vlcQUAWLEUqHp7PZ/Pj6s7j1E7nU4//X6j1XXStfvUOlqn9mlN7W25Rt7XG7Tu5Zu09nQdrtF11LOI7qllrZqX56rzcqxayr6tM+R6+QtBc1P2ufmsWV/eB/B+S4GqL22GQoafP2c45Pw6V2FRA8Pqvprndese6vM6K4Fa51fqq3Xruq6RQbZ1Lo3NPlN/V4Pu57lrHV5XsgbXZLUmAO+1FKg1sDIYuvBQv0NAfd1anZyX47o9MkxqfZJrdfOrGlxdnbr2WZ6dy7VlPaL1X9UhGuPnqzn+LLlv7ZNuXwDvsfw/1Pzy5pdW42pIZDhpbNc6GUq5hj7XPXKsP2eQaK7ndzVWuZ/k+qZrPxd97pppnO/ls9Qedaz4npufddZVz6kz1XnZD+C9lgPVoeS/Vq8lw8xzVuUentftoXuqU2rQSNbQza/2BurquVxnDTnt5Zr01wEqea1xmu+W49SX1wD+1nKgSveldmD4noPI8zM4Vmgd72N1TdGaGYBZg2tyv65f1aC5ud6rQF09V7eO5H65rsf7LNpD9zp+VgA+w65AVQCoL7/gDiv3ZRhY9qk9CyIHisPGfN+t9qsO92n9DCzX+EyOF++XdJ3PZetcDjo3z1F/3resXU3r+hnWc6tlDXUvNQB/ow3ULfry1mBaCau9amj8Z/VZdEEP4DPsClQFp9+cbDpQtR6Bcefw1F/j+QCfazlQuy+3TAeqfu7mT+//zgGaDcBn2vWGCgDYRqACwBACFQCGEKgAMIRABYAhBCoADCFQAWAIgQoAQwhUABhCoALAEAIVAEbcbt9oXBbj33kIXwAAAABJRU5ErkJggg==" InformativeScreenshot="7deed14894f52a482e6c8cddc885fbd1.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='AB Microfinance Bank' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="979, 557, 289, 26" ElementType="Text" FriendlyName="'Please ENTER your name.'" FullSelectorArgument="&lt;webctrl idx='2' parentid='webchat__stacked-layout__id--yprnk' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='webchat__stacked-layout__id--yprnk' tag='P' class='' aaname='Please ENTER your name. ' check:innerText='Please ENTER your name.' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Submit &quot;Martins&quot; into Bot" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0c29ea8a-10f9-47ad-b247-a43b2ba386f7" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://ab-mfbnigeria.com/" DesignTimeRectangle="1274, 642, 22, 15" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'PATH'" FullSelectorArgument="&lt;webctrl parentid='webchat' tag='path' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='webchat' tag='path' type='' class='' aaname='' /&gt;" Guid="21ba2d7f-3753-4822-8655-4377fa00733d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABoAAAATCAYAAACORR0GAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADKSURBVEhLvZShDgIxEERJ+DD+4MLXNKgacIjKVlbeGRwSVVnbBIlCYIq5VGCWlHClm3DhLrQ7ySQ13ddMprsAIiWQ9/59qqME0lqDEAKMMVWgCWStBcZYcmloAoUQXoA43DkHXdcB57wYFJVhiC9XKSgCDfGNDfkHikB5fL80F4pAUTG+eFkpNdkRlPsbdBQkpZzs2SCy6MjKQFJvsg9LtoLIlmqN4fdHD8erha1rcRlK6NLfYH8+wOq0gWXbJBcDxZevzQ4N/7iBJ/f/BoLj6FA5AAAAAElFTkSuQmCC" InformativeScreenshot="aeb2af38e0578e83a758a260a412bcd0.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='AB Microfinance Bank' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="979, 557, 289, 26" ElementType="Text" FriendlyName="'Please ENTER your name.'" FullSelectorArgument="&lt;webctrl idx='2' parentid='webchat__stacked-layout__id--yprnk' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='webchat__stacked-layout__id--yprnk' tag='P' class='' aaname='Please ENTER your name. ' check:innerText='Please ENTER your name.' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAASUAAAAeCAYAAABqrQitAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATNSURBVHhe7Zo9qFVHFIVvm9oqKYQgpEqnKWzShIAWQlIYQQhYGUICIYWJTdAnEX0YG5ukE20US8HGTvIjvgimFAuLdIKlgt3krWOWrLvc51zfE2XuZRUf58zstefsmTN7M++8O1v/40kLIYReSFEKIXRFilIIoStSlEIIXZGiFELoihSlEEJXpCiFELoiRSl0yY3bN9qDO2vt2d+HWrt7YLiijf5KH1aHFKXQFb/9+bA92vh2KERjwA5d5R+WnxSl0A0oNDwZLQK6FKbVZEtFaTabtWNX/iltIbwujza+KQvQGDgxVeOE5WauKO3ed3goPOTdXR/OizspSkfWr83FSWjnPKBTP8xn/9enRv0BfKl1G3xhw9Vt/qywNfCtiMXm6e/72r3LHw3gfqwP5BvT6jFXlJi02tbChOTrqShVNsC4XePzA2jrHEmlJe7DeHKK3D4PNtZa++vz1i5/1859+V67+tOudvXk++3cVzuG4oMr2uiHHTro4VeNF5aXyaLkye+J5ycr9gM/jYz5aXJDoz5jReFVihILh47hbUCd9oFKSyofxIO4tA9U46gWNs7Xx8A68eQGuD5cS/gyFvcl1HN8j5trSfQ9sU0bfdkG1ALVAp/3FM/uftHaqfXWjl9oj78/0dqvPw7F6PHNT+au7fzac/umrp39efi2VI0XlpdtFyUmA22aQNCoTbUYU20KxmdicYPzeYrH5XAe1HEM9qvW50EqLXGfqXimtLCpn8f7KkUJbfhR48Cuz0eb88I4avNYK1+g66nxwcZYPNZFtFsHnxcaBUXIcc2mXzVeWF4W/vnmm043pCYDNyHbiiaiJ55qNAEAnq3xEI6heNxsa2L7/ADa/lyAPn8GbfDR/sqfeHLqnOCna8i+KnbgY0Gn9grVAx9T0fcEKl/GBnDPuW/l/VXoSWng/5PSS2yelF5ozpwe/KrxwvLyUlHCRiS+eXWTqk6hFptxzKZFhUlZ6UG1qT15HE1sTWTtJ2h7MoFKS9xnLE6iyclYeM/5V1rc6zvQuaANnb8jR/XAfdCGRqHNfTU2gHuuQzUOUP0U+k3p/vnP2sVjO9u/1z+eK0hoX/xh52DPN6XVZfKk5GCTcZNC6wlFvGiMFRH2Y0zca6JPMTYe8XkgmdBXzQ/t6rmVlrjPong4N58j+1Srz0XcWkCwTlwvtKFTe4Xqgfp43N52X/jpmug6+Ny2iv73Ddy7tKcdP/hOO/rprP1ydMdwRRv9qst/31aPbRclbNCxTaibFUCrm50wyfTek7TCk8ep5gE98H6PlUytReWzKPbq+b6GnBfXGFq0aYfW7SwwY6geqI/Pw9+T+8Ku8av/ovcHrY5d4b9Twr/+71/b266f/WC46k8BAPTVOGG52XZRAtzERDc4EwjoZufmJLqJubHH7ITJ69BezYPPrfo1bqLxE/pWPmPjEK6Brp/2E7drHFXRgr/qHR/TfXR8fU/AfWHnGgCfM7Qci/D9QYs2tRXDL7rxbUkKzxjQ5Rfdq8lcUQpvDk/gUINCs+iX3bCnIK0uKUpvCRQkPWWEafCtCB+xeXLCFe18Q1p9UpTeAvyzRv8UCiHUpCiFELoiRSmE0BUpSiGErkhRCiF0RYpSCKErUpRCCF2RohRC6Ign7T/GWdiX1tAMLQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Success Notification" sap:VirtualizedContainerService.HintSize="338,85" sap2010:WorkflowViewState.IdRef="MessageBox_1">
+              <ui:MessageBox.Text>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">"ABChatbotCheckAutomation is successful!!"</CSharpValue>
+                </InArgument>
+              </ui:MessageBox.Text>
+            </ui:MessageBox>
+          </Sequence>
+        </Sequence>
+      </ActivityAction>
+    </uix:NApplicationCard.Body>
+    <uix:NApplicationCard.TargetApp>
+      <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Firefox" IconBase64="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" InformativeScreenshot="31fd12588f8de8dc2e0084941856c582.png" Selector="&lt;html app='firefox.exe' title='AB Microfinance Bank' /&gt;" Title="AB Microfinance Bank">
+        <uix:TargetApp.Url>
+          <InArgument x:TypeArguments="x:String">
+            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">in_SiteUrl ?? "https://ab-mfbnigeria.com/"</CSharpValue>
+          </InArgument>
+        </uix:TargetApp.Url>
+      </uix:TargetApp>
+    </uix:NApplicationCard.TargetApp>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+  </uix:NApplicationCard>
+</Activity>
